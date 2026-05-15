@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>La Roche Restaurant</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- ========================= -->
+    <!-- NAVBAR -->
+    <!-- ========================= -->
+
+    <header class="navbar">
+
+        <a href="index.html" class="logo">
+            <h1>LA ROCHE</h1>
+            <p>RESTAURANT</p>
+        </a>
+
+        <nav>
+            <ul class="nav-links">
+
+                <li><a href="index.html" class="active">HOME</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">MENU</a></li>
+                <li><a href="#">RESERVATIONS</a></li>
+                <li><a href="#">GALLERY</a></li>
+                <li><a href="#">CONTACT</a></li>
+
+            </ul>
+        </nav>
+
+        <a href="#" class="book-btn">BOOK A TABLE</a>
+
+    </header>
+
+    <!-- ========================= -->
+    <!-- HERO SECTION -->
+    <!-- ========================= -->
+
+    <section class="hero">
+
+        <div class="hero-overlay"></div>
+
+        <div class="hero-content">
+
+            <div class="hero-text">
+
+                <h2>
+                    SAVOR <br>
+                    EXCELLENCE. <br>
+                    <span>EXPERIENCE</span> <br>
+                    <span>LA ROCHE.</span>
+                </h2>
+
+                <p>
+                    A fine dining experience where flavor meets artistry.
+                </p>
+
+                <a href="#" class="hero-btn">
+                    BOOK A TABLE
+                </a>
+
+            </div>
+
+            <div class="hero-image">
+
+                <img src="Images\HeroImageDish.png" alt="Luxury Dish">
+
+            </div>
+<!--Scroll Down Arrow-->
+        </div>
+        <a href="#view-menu-section" class="scroll-down">
+    <span></span>
+        </a>
+
+    </section>
+
+    <div class="section-divider"></div>
+
+<!-- ========================= -->
+<!-- MENU PREVIEW SECTION -->
+<!-- ========================= -->
+
+<section class="menu-preview" id="view-menu-section">
+
+    <div class="menu-preview-image">
+        <img src="Images\MenuImageMain.png" alt="Luxury Dish">
+        
+    </div>
+
+    <div class="menu-preview-text">
+        <p class="section-tag">OUR MENU</p>
+
+        <h2>CRAFTED WITH PASSION.<br>SERVED WITH PRIDE.</h2>
+
+        <div class="orange-line"></div>
+
+        <p class="menu-preview-description">
+            Explore a menu inspired by modern luxury dining, featuring carefully selected
+            ingredients, bold flavors, and beautifully crafted dishes. Every plate at
+            La Roche is designed to create an unforgettable culinary experience.
+        </p>
+
+        <a href="#" class="menu-preview-btn">VIEW OUR MENU</a>
+    </div>
+
+</section>
+  
+
+<div class="section-divider"></div>
+
+
+
+<!-- ========================= -->
+<!-- PRIVATE DINING SECTION -->
+<!-- ========================= -->
+
+<section class="private-dining">
+
+    <div class="private-dining-content">
+
+        <p class="section-tag">
+            EVENTS & PRIVATE DINING
+        </p>
+
+        <h2>
+            HOST UNFORGETTABLE <br>
+            EXPERIENCES AT <span>LA ROCHE.</span>
+        </h2>
+
+        <div class="orange-line"></div>
+
+        <p class="private-dining-description">
+
+            From intimate celebrations to exclusive corporate evenings,
+            La Roche offers a refined luxury setting tailored for memorable occasions.
+
+            Our private dining experiences combine exceptional cuisine,
+            elegant atmosphere, and personalized service to ensure every
+            event feels truly special.
+
+        </p>
+
+        <div class="private-dining-buttons">
+
+            <a href="#" class="booking-btn">
+                MAKE A RESERVATION
+            </a>
+
+            <a href="#" class="event-btn">
+                PLAN AN EVENT
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ========================= -->
+<!-- REVIEWS SECTION -->
+<!-- ========================= -->
+
+
+<div class="section-divider"></div>
+
+<section class="reviews-section">
+
+    <p class="section-tag">GUEST REVIEWS</p>
+
+    <h2>WHAT OUR GUESTS SAY</h2>
+
+    <div class="reviews-line"></div>
+
+    <div class="review-carousel">
+
+        <div class="review-card active">
+
+            <div class="review-content">
+
+                <p class="stars">★★★★★</p>
+
+                <p class="review-text">
+                    An unforgettable dining experience. The atmosphere, service, and food were all exceptional.
+                </p>
+
+                <h3>— Google Review</h3>
+
+            </div>
+
+        </div>
+
+        <div class="review-card">
+
+            <div class="review-content">
+
+                <p class="stars">★★★★★</p>
+
+                <p class="review-text">
+                    Beautiful setting, incredible food, and a premium experience from start to finish.
+                </p>
+
+                <h3>— Google Review</h3>
+
+            </div>
+
+        </div>
+
+        <div class="review-card">
+
+            <div class="review-content">
+
+                <p class="stars">★★★★★</p>
+
+                <p class="review-text">
+                    Perfect for a special evening. Everything felt elegant, relaxed, and carefully prepared.
+                </p>
+
+                <h3>— Google Review</h3>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+    <div class="review-buttons">
+        <button onclick="previousReview()">‹</button>
+        <button onclick="nextReview()">›</button>
+    </div>
+
+</section>
+
+<div class="section-divider"></div>
+
+<script src="script.js"></script>
+
+<!-- ========================= -->
+<!-- FOOTER -->
+<!-- ========================= -->
+
+
+<footer class="footer">
+
+    <div class="footer-top">
+
+        <!-- LEFT -->
+
+        <div class="footer-column">
+
+            <h3>LA ROCHE</h3>
+
+            <p>
+                A refined dining experience where luxury,
+                atmosphere, and exceptional cuisine meet.
+            </p>
+
+        </div>
+
+        <!-- CENTER -->
+
+        <div class="footer-column">
+
+            <h4>NAVIGATION</h4>
+
+            <ul>
+
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">MENU</a></li>
+                <li><a href="#">PRIVATE EVENTS</a></li>
+                <li><a href="#">REVIEWS</a></li>
+                <li><a href="#">CONTACT</a></li>
+
+            </ul>
+
+        </div>
+
+        <!-- RIGHT -->
+
+        <div class="footer-column">
+
+            <h4>CONTACT</h4>
+
+            <p>+27 21 000 0000</p>
+
+            <p>info@laroche.co.za</p>
+
+            <p>
+                123 Avenue Drive <br>
+                Summerstrand, Port Elizabeth
+            </p>
+
+        </div>
+
+    </div>
+
+    <!-- SOCIALS -->
+
+    <div class="footer-socials">
+
+    <a href="#">
+        <i class="fa-brands fa-instagram"></i>
+        INSTAGRAM
+    </a>
+
+    <a href="#">
+        <i class="fa-brands fa-facebook-f"></i>
+        FACEBOOK
+    </a>
+
+</div>
+
+    <!-- BOTTOM -->
+
+    <div class="footer-bottom">
+
+        <p>
+            © 2026 La Roche Restaurant. All Rights Reserved.
+        </p>
+
+    </div>
+
+</footer>
+
+
+</body>
+</html>
