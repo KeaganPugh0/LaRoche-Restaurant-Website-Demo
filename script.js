@@ -53,3 +53,34 @@ function nextReview() {
 function previousReview() {
     updateReview("previous");
 }
+
+const music = document.getElementById("backgroundMusic");
+const musicToggle = document.getElementById("musicToggle");
+
+let isPlaying = false;
+
+musicToggle.addEventListener("click", () => {
+
+    if (isPlaying === false) {
+
+        music.play();
+
+        musicToggle.innerHTML = "Ⅱ";
+
+        isPlaying = true;
+
+    }
+
+    else {
+
+        music.pause();
+
+        music.currentTime = 0;
+
+        musicToggle.innerHTML = "♪";
+
+        isPlaying = false;
+
+    }
+
+});
