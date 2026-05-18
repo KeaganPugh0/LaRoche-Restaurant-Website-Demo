@@ -896,8 +896,11 @@ body {
     text-align: center;
 }
 
-
-
+/* Make all headings and paragraphs unselectable to prevent accidental text selection. */
+h1, h2, h3, h4, h5, h6, .section-tag , .menu-preview-description {
+    user-select: none;
+    outline: none;
+}
 
 
 
