@@ -116,6 +116,31 @@ body {
     background-color: #ffb347;
 }
 
+.hero-buttons {
+    display: flex;
+
+    align-items: center;
+
+    gap: 30px;
+}
+
+
+.hero-menu-btn {
+    text-decoration: none;
+    color: #ff8c00;
+    border: 1px solid #ff8c00;
+    padding: 16px 28px;
+    font-size: 13px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.hero-menu-btn:hover {
+    background-color: #ff8c00;
+    color: #050505;
+}
+
 /* HERO */
 
 .hero {
@@ -902,6 +927,296 @@ h1, h2, h3, h4, h5, h6, .section-tag , .menu-preview-description {
     outline: none;
 }
 
+
+
+/* RESERVATION SECTION */
+
+.reservation-form label {
+    display: block;
+
+    font-size: 15px;
+
+    letter-spacing: 1px;
+
+    color: #ffffff;
+
+    margin-bottom: 3%;
+
+    font-weight: 600;
+
+    font-family: "Inter", sans-serif;
+}
+
+.reservation-time-wrapper label {
+    display: block;
+
+    font-size: 15px;
+
+    letter-spacing: 1px;
+
+    text-transform: uppercase;
+
+    color: #ffffff;
+
+    margin-bottom: 3%;
+
+    font-weight: 600;
+
+    font-family: "Inter", sans-serif;
+}
+
+.reservation-title {
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 90px;
+
+    text-align: center;
+
+    padding: 40px 70px;
+
+    background: rgba(0, 0, 0, 0.5);
+
+    backdrop-filter: blur(1px);
+
+    display: inline-block;
+
+    border-radius: 6px;
+
+    margin-bottom: 5%;
+     margin-top: 3%;
+}
+
+.reservation-section {
+    text-align: center;
+}
+
+.reservation-container {
+     width: 70%;
+
+    max-width: 1150px;
+
+    margin: 0 auto;
+    display: grid;
+
+    grid-template-columns: 1.2fr 1fr;
+
+    gap: 80px;
+
+    background-color: #0a0a0a;
+
+    border: 1px solid rgba(255,140,0,0.2);
+
+    padding: 70px;
+
+    transition: 0.35s ease;
+
+   
+}
+
+.reservation-container:hover {
+    border-color: #ff8c00;
+    transform: translateY(-10px);
+     box-shadow: 0 20px 40px rgba(0,0,0,0.45);
+}
+
+.reservation-form h2 {
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 48px;
+
+}
+
+.reservation-form p {
+    color: #d0d0d0;
+
+    line-height: 1.9;
+
+    margin-bottom: 20px;
+
+    margin-top: 2;
+}
+
+.reservation-info h2 {
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 48px;
+
+    margin-bottom: 25px;
+}
+
+.reservation-info p {
+    color: #d0d0d0;
+
+    line-height: 1.9;
+
+    margin-bottom: 20px;
+}
+
+.reservation-details i {
+    color: #ff8c00;
+
+    margin-right: 12px;
+}
+
+.reservation-form {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 25px;
+}
+
+
+.reservation-form input[type="date"]::-webkit-calendar-picker-indicator,
+.reservation-form input[type="time"]::-webkit-calendar-picker-indicator {
+    filter: invert(54%) sepia(95%) saturate(1400%) hue-rotate(2deg) brightness(103%) contrast(103%);
+
+    cursor: pointer;
+}
+.reservation-form input,
+.reservation-form textarea,
+.reservation-form select {
+    background: transparent;
+
+    border: none;
+
+    border-bottom: 1px solid rgba(255,255,255,0.25);
+
+    padding: 15px 0;
+
+    color: white;
+
+    font-size: 16px;
+
+    outline: none;
+}
+
+.reservation-row {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 25px;
+}
+
+.reservation-form textarea {
+    resize: none;
+
+    height: 120px;
+}
+
+.reservation-form button {
+    width: fit-content;
+
+    background-color: #ff8c00;
+
+    color: #050505;
+
+    border: none;
+
+    padding: 18px 36px;
+
+    font-weight: 600;
+
+    letter-spacing: 1px;
+
+    cursor: pointer;
+
+    transition: 0.3s ease;
+}
+
+.reservation-form button:hover {
+    background-color: white;
+}
+
+
+.reservation-form select {
+    background-color: #050505;
+
+    color: white;
+
+    border: 1px solid rgba(255,255,255,0.2);
+
+    padding: 16px;
+
+    appearance: none;
+
+    -webkit-appearance: none;
+
+    -moz-appearance: none;
+
+    cursor: pointer;
+}
+
+
+.guest-count {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 12px;
+}
+
+.guest-count label {
+    color: white;
+
+    font-size: 15px;
+
+    letter-spacing: 1px;
+}
+
+.guest-count input {
+    background: transparent;
+
+    border: none;
+
+    border-bottom: 1px solid rgba(255,255,255,0.25);
+
+    padding: 15px 0;
+
+    color: white;
+
+    font-size: 16px;
+
+    outline: none;
+}
+
+.orange-letter {
+    color: #ff8c00;
+}
+
+
+/* Reservation  */
+.reservation-row select {
+    text-align: center;
+
+    text-align-last: center;
+}
+
+
+.reservation-row select option {
+    text-align: center;
+}
+
+.reservation-section {
+    background:
+        linear-gradient(
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.0)
+        ),
+        url("Images/DININGroom.png");
+
+    background-size: cover;
+
+    background-position: center;
+
+    background-repeat: no-repeat;
+
+    padding: 140px 8%;
+
+    min-height: 100vh;
+    background-attachment: fixed;
+}
 
 
 /* RESPONSIVE */

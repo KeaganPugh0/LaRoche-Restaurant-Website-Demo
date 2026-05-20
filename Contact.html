@@ -15,9 +15,7 @@
     <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
-
 <body>
-   
 <!-- ========================= -->
     <!-- NAVBAR -->
     <!-- ========================= -->
@@ -34,10 +32,10 @@
 
                 <li><a href="index.html" >HOME</a></li>
                 <li><a href="About.html">ABOUT</a></li>
-                <li><a href="Menu.html" class="active">MENU</a></li>
+                <li><a href="Menu.html">MENU</a></li>
                 <li><a href="Reservations.html">RESERVATIONS</a></li>
                 <li><a href="Gallery.html">GALLERY</a></li>
-                <li><a href="Contact.html">CONTACT</a></li>
+                <li><a href="Contact.html" class="active">CONTACT</a></li>
 
             </ul>
 
@@ -52,97 +50,138 @@
     <a href="index.html">HOME</a>
     <a href="about.html">ABOUT</a>
     <a href="Menu.html">MENU</a>
-    <a href="Reservations.html">RESERVATIONS</a>
-    <a href="Contact.html">CONTACT</a>
+    <a href="#">RESERVATIONS</a>
+    <a href="#">CONTACT</a>
         </div>
 
-          <a href="#" class="book-btn">BOOK A TABLE</a>
-          
-</header>
+
+
+        <a href="#" class="book-btn">BOOK A TABLE</a>
+
+    </header>
+
+
+
+
+
+<section class="reservation-section">
+
+    <h1 class="reservation-title">
+    <span class="orange-letter">R</span>ESERVATIONS
+    </h1>  
+
+    <div class="reservation-container">
+<form class="reservation-form">
+    <h2>Book Your Experience</h2>
+
+            <p>
+                Reserve your table at La Roche and enjoy an unforgettable
+                luxury dining experience crafted with elegance and flavor.
+            </p>
+
+            <label for="Your-Details">
+                YOUR DETAILS
+            </label>
+
+    <div class="section-divider"></div>
+
+
+            <input type="text" placeholder="Full Name">
+
+            <input type="email" placeholder="E-mail">
+
+            <input type="tel" placeholder="Phone Number">
+
+          <div class="reservation-time-wrapper">
+
+    <label for="reservation-time">
+        Reservation Time
+    </label>
 
     
-<section class="menu-page-banner">
-<h2 class="menu-section-heading">
-    
-    MENUS
-</h2>
-<p class="menu-banner-description">
-    Discover a curated dining experience featuring refined breakfasts,
-    handcrafted cocktails, elegant lunches, and unforgettable evening cuisine
-    inspired by modern luxury dining.
+
+
+    <p class="reservation-hours">
+    Breakfast: 07:00–11:30 |
+    Lunch: 12:00–15:00 |
+    Dinner: 18:00–22:30
 </p>
 
+    <div class="reservation-row">
 
+    <select id="mealType">
+    <option value=""> < - - - Select Dining Experience - - - > </option>
+    <option value="breakfast">Breakfast</option>
+    <option value="lunch">Lunch</option>
+    <option value="dinner">Dinner</option>
+</select>
 
-<a href="Menus\LaRoche_Full_Menu.pdf"
-   target="_blank"
-   class="menu-preview-btn">
-    VIEW FULL MENU
-</a>
+<select id="reservationTime">
+    <option value=""> < - - - Select Time- - - > </option>
+</select>
 
+</div>
+    
 
+</div>
+            <div class="guest-count">
+
+                <label for="guests">
+                    Number of Guests
+                </label>
+
+                <input
+                 type="number"
+                    id="guests"
+                    name="guests"
+                placeholder="0"
+                     min="0"
+                    >
+                    
+
+                </div>
+            <textarea placeholder="Special Requests"></textarea>
+
+            <button type="submit">
+                BOOK RESERVATION
+            </button>
+
+        </form>
+        <div class="reservation-info">
+
+            <h2>Contact Information</h2>
+
+            
+
+            <div class="reservation-details">
+
+                <p>
+                    <i class="fa-solid fa-phone"></i>
+                    +27 21 555 8921
+                </p>
+
+                <p>
+                    <i class="fa-solid fa-envelope"></i>
+                    reservations@laroche.com
+                </p>
+
+                <p>
+                    <i class="fa-solid fa-location-dot"></i>
+                    Cape Town, South Africa
+                </p>
+
+            </div>
+
+        </div>
 
         
-</section>
-<p class="section-tag">OUR SELECTION</p>
 
-
-<section class="menu-categories">
-    
-<div class="menu-category-card">
-    <img src="Images/MenuImageMain.png" alt="Full Menu">
-
-    <div class="menu-category-text">
-        <h2>Full Menu</h2>
-
-        <p>
-            View the complete La Roche dining selection, including drinks,
-            breakfast, lunch, dinner, and seasonal specials.
-        </p>
-
-        <a href="Menus\LaRoche_Full_Menu.pdf" target="_blank">
-            VIEW FULL MENU
-        </a>
-
-       
-    </div>
-</div>
-    <div class="menu-category-card">
-        <img src="Images/WineList.png" alt="Wine and Cocktails">
-
-        <div class="menu-category-text">
-            <h2>Wine & Cocktails</h2>
-            <p>Signature cocktails, curated wines, and refined pairings for every occasion.</p>
-            <a href="Menus\LaRoche_Drinks_Menu.pdf" target="_blank">
-                VIEW DRINKS
-            </a>
-        </div>
-    </div>
-
-    <div class="menu-category-card">
-        <img src="Images\BreakfastMenu.png" alt="Breakfast">
-
-        <div class="menu-category-text">
-            <h2>Breakfast</h2>
-            <p>Elegant morning plates crafted with fresh ingredients and rich flavour.</p>
-            <a href="Menus\LaRoche_Breakfast_Menu.pdf" target="_blank">
-                VIEW BREAKFAST</a>
-        </div>
-    </div>
-
-    <div class="menu-category-card">
-        <img src="Images\LunchImage.png" alt="Lunch and Dinner">
-
-        <div class="menu-category-text">
-            <h2>Lunch & Dinner</h2>
-            <p>From refined midday dining to intimate evening meals, every dish is served with care.</p>
-            <a href="Menus\LaRoche_Lunch_Dinner_Menu.pdf" target="_blank">
-                VIEW LUNCH & DINNER</a>
-        </div>
     </div>
 
 </section>
-<div class="section-divider"></div>
+
+
+
 <!-- ========================= -->
 <!-- FOOTER -->
 <!-- ========================= -->
@@ -230,4 +269,8 @@
 
 </footer>
 
+
+<script src="script.js"></script>
+
 </body>
+</html>
