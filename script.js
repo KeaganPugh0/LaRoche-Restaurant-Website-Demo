@@ -116,3 +116,38 @@ if (mealType && reservationTime) {
     });
 
 }
+
+
+const selects = document.querySelectorAll(".select-wrapper-diningArrow select");
+
+selects.forEach(function (select) {
+
+    select.addEventListener("mousedown", function () {
+        this.parentElement.classList.add("open");
+    });
+
+    select.addEventListener("change", function () {
+        this.parentElement.classList.remove("open");
+    });
+
+    select.addEventListener("blur", function () {
+        this.parentElement.classList.remove("open");
+    });
+
+});
+
+const reservationSelect = document.querySelector(".select-wrapper-reservationArrow select");
+
+if (reservationSelect) {
+    reservationSelect.addEventListener("mousedown", function () {
+        this.parentElement.classList.add("open");
+    });
+
+    reservationSelect.addEventListener("change", function () {
+        this.parentElement.classList.remove("open");
+    });
+
+    reservationSelect.addEventListener("blur", function () {
+        this.parentElement.classList.remove("open");
+    });
+}
