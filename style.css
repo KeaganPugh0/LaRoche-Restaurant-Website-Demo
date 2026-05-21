@@ -984,6 +984,8 @@ h1, h2, h3, h4, h5, h6, .section-tag , .menu-preview-description {
 
     margin-bottom: 5%;
      margin-top: 3%;
+
+     
 }
 
 .reservation-form h3 {
@@ -1483,5 +1485,89 @@ h1, h2, h3, h4, h5, h6, .section-tag , .menu-preview-description {
     }
 
 }
+
+}
+
+
+/*Phone responsiveness for the reservation section */
+@media (max-width: 768px) {
+
+    .reservation-container {
+        grid-template-columns: 1fr;
+
+        width: 92%;
+
+        padding: 45px 25px;
+
+        gap: 50px;
+        
+    }
+
+    .reservation-title {
+      
+        font-size: clamp(36px, 8vw, 56px);
+
+        width: 100%;
+
+        text-align: center;
+
+        margin: 0 auto;
+
+        padding-inline: 0;
+         
+        padding-top: 10px;
+    
+    }
+
+    .reservation-form h2,
+    .reservation-info h2 {
+        font-size: 42px;
+
+        text-align: center;
+    }
+
+    .reservation-form p {
+        text-align: center;
+
+        font-size: 16px;
+
+        line-height: 1.8;
+    }
+
+    .reservation-row {
+        grid-template-columns: 1fr;
+
+        gap: 18px;
+    }
+
+    .reservation-row select,
+    .guest-count input,
+    .reservation-form input,
+    .reservation-form textarea,
+    .reservation-form button {
+        width: 100%;
+    }
+
+    .reservation-details {
+        text-align: center;
+    }
+
+    .reservation-details p {
+        justify-content: center;
+    }
+
+    .reservation-hours {
+        font-size: 14px;
+
+        line-height: 1.8;
+
+        text-align: center;
+    }
+
+    .reservation-form h3 {
+        font-size: 14px;
+
+        letter-spacing: 2px;
+    }
 
 }
